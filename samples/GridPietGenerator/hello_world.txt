@@ -1,0 +1,78 @@
+push3 push4 mul
+push1 dup sub
+goto:cnt
+
+:push_h
+pop
+push3 push4 add
+goto:cnt
+
+:push_e
+pop
+push2 push2 mul
+goto:cnt
+
+:push_l
+pop
+push2 push3 dup mul add
+goto:cnt
+
+:push_o
+pop
+push2 push3 push4 add mul
+goto:cnt
+
+:push_w
+pop
+push1 push3 dup push4 add mul add
+goto:cnt
+
+:push_r
+pop
+push1 push4 dup mul add
+goto:cnt
+
+:push_d
+pop
+push3
+goto:cnt
+
+:push_comma
+pop
+push1 push2 sub push4 dup push3 mul push1 add mul push1 add mul
+goto:cnt
+
+:cnt
+push2 push1 roll
+push1 sub
+
+dup if::finished
+dup
+push1 sub dup if::push_h
+push1 sub dup if::push_e
+push1 sub dup if::push_l
+push1 sub dup if::push_l
+push1 sub dup if::push_o
+push1 sub dup if::push_comma
+push1 sub dup if::push_w
+push1 sub dup if::push_o
+push1 sub dup if::push_r
+push1 sub dup if::push_l
+push1 sub dup if::push_d
+
+:finished
+pop
+push1 push2 dup dup dup dup push3 mul mul mul mul mul add
+
+:out
+dup
+push3 push2 roll
+dup if::end
+add outc
+goto:out
+
+:end
+pop pop pop
+end
+
+
