@@ -92,7 +92,20 @@ OpenCVで扱えるものなら何でもOKです。
 ## ライセンス
 BSD 3-Clause License ([LISENCE](LICENSE))参照
 
+## その他
+### 免責事項
+まずは[ライセンス(BSD 3-Clause License)](LICENSE)をご確認ください。
+
+特に、Pietソースコードを埋め込む画像に起因して生じた一切のトラブル・損害等も、
+
+ライセンスの免責の範囲内として責任を負いかねます。
+
+### 禁止事項
+本プログラムを使用することにより、
+
+著作権、肖像権、パブリシティ権、その他の権利を侵害する行為を禁止します。
+
 ## 問合せ / Contact
 Y-mos
 
-E-mail:ymos.36e17a7047@gmail.com
+twitter:[Y-mos](https://twitter.com/ymos3327)
