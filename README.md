@@ -78,9 +78,8 @@ make
 ※なお、「Piet配置ファイル」（samples/GridPietGenerator/hello_world_out.txt）は、
 [GridPietGenerator](https://github.com/Y-mos/GridPietGenerator)を使って、
 「処理フローファイル」（[hello_world.txt](samples/GridPietGenerator/hello_world.txt)）から生成します。
-（「hello_world.ppm」は、画像埋め込みには使いません。）
 ```
-./GridPietGenerator hello_world.txt hello_world.ppm hello_world_out.txt
+./GridPietGenerator hello_world.txt -a hello_world_out.txt
 ```
 
 ## 出力画像のフォーマット
